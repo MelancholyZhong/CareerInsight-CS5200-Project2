@@ -3,3 +3,6 @@
 replace "job_update" to users, positions, and applications to import other data
 ### Create the dump file
 ```mongodump --db your_database_name```
+### Run separate queries
+```node queries/query1.js```
+replace query1 to query2 and ect. for other example queries
