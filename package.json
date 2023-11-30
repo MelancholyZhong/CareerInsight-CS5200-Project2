@@ -1,0 +1,14 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "```mongoimport -d career_insight -c job_update mongodb://localhost:27017 data/job_update.json --jsonArray``` replace \"job_update\" to users, positions, and applications to import other data ### Create the dump file ```mongodump --db your_database_name```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^6.3.0"
+  }
+}
