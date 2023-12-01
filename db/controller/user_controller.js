@@ -1,5 +1,6 @@
 const { connectToClient, closeClient, getDB } = require("../../mongoUtils");
 
+//display the users and newest first
 async function getUsers() {
   const client = connectToClient();
   try {
@@ -19,6 +20,7 @@ async function getUsers() {
   }
 }
 
+//get user by id
 async function getUser(user_id) {
   const client = connectToClient();
   try {
@@ -33,6 +35,7 @@ async function getUser(user_id) {
   }
 }
 
+//update a user
 async function updateUser(user_id, user) {
   const client = connectToClient();
   try {
@@ -56,6 +59,7 @@ async function updateUser(user_id, user) {
   }
 }
 
+//delete a user
 async function deleteUser(user_id) {
   const client = connectToClient();
   try {
@@ -72,6 +76,7 @@ async function deleteUser(user_id) {
   }
 }
 
+//adding new user
 async function addUser(user) {
   const newUser = {
     user_id: +user.id,

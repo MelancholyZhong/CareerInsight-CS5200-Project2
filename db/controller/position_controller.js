@@ -1,5 +1,6 @@
 const { connectToClient, closeClient, getDB } = require("../../mongoUtils");
 
+//get the positions (newest first so that we can see the newly inserted ones)
 async function getPositions() {
   const client = connectToClient();
   try {
@@ -19,6 +20,7 @@ async function getPositions() {
   }
 }
 
+//get position by id, used for edit
 async function getPosition(position_id) {
   const client = connectToClient();
   try {
@@ -35,6 +37,7 @@ async function getPosition(position_id) {
   }
 }
 
+//updatde a position
 async function updatePosition(position_id, position) {
   const client = connectToClient();
   try {
@@ -61,6 +64,7 @@ async function updatePosition(position_id, position) {
   }
 }
 
+//delete a position by id
 async function deletePosition(position_id) {
   const client = connectToClient();
   try {
@@ -77,6 +81,7 @@ async function deletePosition(position_id) {
   }
 }
 
+// add a position
 async function addPosition(position) {
   const newPosition = {
     position_id: +position.id,
