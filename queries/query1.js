@@ -1,4 +1,4 @@
-const { connectToClient, closeClient, getDB } = require("./mongoUtils");
+const { connectToClient, closeClient, getDB } = require("../mongoUtils");
 
 //Contains an aggregation: top 10 applied companies
 

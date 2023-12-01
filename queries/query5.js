@@ -1,4 +1,4 @@
-const { connectToClient, closeClient, getDB } = require("./mongoUtils");
+const { connectToClient, closeClient, getDB } = require("../mongoUtils");
 
 // self-defined query
 // find the average base salary of each job title and sort in decreasing order

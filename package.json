@@ -1,14 +1,23 @@
 {
   "name": "project2",
   "version": "1.0.0",
-  "description": "```mongoimport -d career_insight -c job_update mongodb://localhost:27017 data/job_update.json --jsonArray``` replace \"job_update\" to users, positions, and applications to import other data ### Create the dump file ```mongodump --db your_database_name```",
-  "main": "index.js",
+  "description": "MongoDB version of career insight, project 2 of CS5200",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./node_modules/nodemon/bin/nodemon.js ./bin/www"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "mongodb": "^6.3.0"
+    "mongodb": "^6.3.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3"
   }
 }

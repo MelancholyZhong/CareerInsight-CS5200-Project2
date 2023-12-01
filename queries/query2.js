@@ -1,4 +1,4 @@
-const { connectToClient, closeClient, getDB } = require("./mongoUtils");
+const { connectToClient, closeClient, getDB } = require("../mongoUtils");
 
 //contain a complex search criterion (more than one expression with logical connectors)
 //find good jobs: the base salary is more than 150k, and the bonus is more than 25% of base salary or the equity is more than 50% of base salary

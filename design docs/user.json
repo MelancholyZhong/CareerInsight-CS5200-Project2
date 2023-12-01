@@ -1,6 +1,6 @@
 {
   "user_id": 123,
   "name": "Alice",
-  "job_interests": ["Computer Sicence", "Cybersecurity"],
-  "graduate_school": "Northeastern University"
+  "job_interest": ["Computer Sicence", "Cybersecurity"],
+  "school": "Northeastern University"
 }

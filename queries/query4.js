@@ -1,4 +1,4 @@
-const { connectToClient, closeClient, getDB } = require("./mongoUtils");
+const { connectToClient, closeClient, getDB } = require("../mongoUtils");
 
 //updating a document based on a query parameter
 //increase a base_salary by $10(I dont want change too drasticly)  if lower than 100,000.

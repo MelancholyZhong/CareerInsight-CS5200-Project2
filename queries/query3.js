@@ -1,4 +1,4 @@
-const { connectToClient, closeClient, getDB } = require("./mongoUtils");
+const { connectToClient, closeClient, getDB } = require("../mongoUtils");
 
 //counting documents for an specific user
 //count the applications the user have submitted (try use 9350 for user_id, most random id may not have applications, and some are 1)
